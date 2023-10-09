@@ -18,22 +18,29 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>badwords</title>
+    <title>php</title>
+
+    <!--bootstrap-css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
-    <form action="script.php" method="POST">
-        <div>
+
+<body class="p-5 bg-info">
+    <form action="script.php" method="post">
+        <div class="mb-3"> 
             <span>SCRIVI UN TESTO:</span>
-            <input type="text" name="paragraph" id="paragraph">
+            <input name="paragraph">
         </div>
-        <div>
+        <div class="mb-3">
             <span>SCRIVI LA PAROLA DA CENSURARE:</span>
-            <input type="text" name="badword" id="badword">
+            <input name="badword">
         </div>
-        <button>invia</button>
+        <button class="bg-success text-white border-0">invia</button>
     </form>
 </body>
+
 </html>
