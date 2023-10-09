@@ -1,6 +1,7 @@
 <?php
 
 $paragraph = $_POST["paragraph"];
+$paragraph_length = strlen($paragraph);
 
 $badword = $_POST["badword"];
 
@@ -26,6 +27,11 @@ $new_paragraph = str_replace($badword, '***', $paragraph);
     <p>
         <?php echo $paragraph ?>
     </p>
+    <span>
+        IL PRAGRAFO E' LUNGO:
+        <?php echo $paragraph_length ?>
+        LETTERE
+    </span>
 
 
     <h5 class="mt-5">la parola censurata è:</h5>
